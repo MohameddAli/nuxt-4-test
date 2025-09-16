@@ -1,0 +1,238 @@
+{
+  // Vue 3 Composition API Component Template
+  "Vue 3 Component with Script Setup": {
+    "prefix": "v3-component",
+    "body": [
+      "<template>",
+      "  <div>",
+      "    $1",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "// Imports",
+      "$2",
+      "",
+      "// Props",
+      "interface Props {",
+      "  $3",
+      "}",
+      "",
+      "const props = defineProps<Props>()",
+      "",
+      "// Emits",
+      "const emit = defineEmits<{",
+      "  $4",
+      "}>()",
+      "",
+      "// Logic",
+      "$0",
+      "</script>",
+      "",
+      "<style scoped>",
+      "/* Component styles */",
+      "</style>"
+    ],
+    "description": "Vue 3 component with script setup and TypeScript"
+  },
+
+  // Vuetify Component Template
+  "Vuetify Component": {
+    "prefix": "v-component",
+    "body": [
+      "<template>",
+      "  <v-container>",
+      "    <v-row>",
+      "      <v-col>",
+      "        $1",
+      "      </v-col>",
+      "    </v-row>",
+      "  </v-container>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "// Component logic",
+      "$0",
+      "</script>"
+    ],
+    "description": "Vuetify component template with container layout"
+  },
+
+  // Nuxt Page Template
+  "Nuxt Page": {
+    "prefix": "nuxt-page",
+    "body": [
+      "<template>",
+      "  <div>",
+      "    <Head>",
+      "      <Title>${1:Page Title}</Title>",
+      "      <Meta name=\"description\" content=\"${2:Page description}\" />",
+      "    </Head>",
+      "    ",
+      "    <main>",
+      "      $0",
+      "    </main>",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+      "// Page logic",
+      "definePageMeta({",
+      "  title: '${1:Page Title}',",
+      "  description: '${2:Page description}'",
+      "})",
+      "</script>"
+    ],
+    "description": "Nuxt page template with meta tags"
+  },
+
+  // Pinia Store Template
+  "Pinia Store": {
+    "prefix": "pinia-store",
+    "body": [
+      "export const use${1:Store}Store = defineStore('${2:store}', () => {",
+      "  // State",
+      "  const ${3:state} = ref($4)",
+      "  ",
+      "  // Getters",
+      "  const ${5:getter} = computed(() => {",
+      "    return $6",
+      "  })",
+      "  ",
+      "  // Actions",
+      "  const ${7:action} = async () => {",
+      "    $8",
+      "  }",
+      "  ",
+      "  return {",
+      "    ${3:state},",
+      "    ${5:getter},",
+      "    ${7:action}",
+      "  }",
+      "})"
+    ],
+    "description": "Pinia store with setup syntax"
+  },
+
+  // Composable Template
+  "Nuxt Composable": {
+    "prefix": "nuxt-composable",
+    "body": [
+      "export const use${1:Name} = () => {",
+      "  // State",
+      "  const ${2:state} = ref($3)",
+      "  ",
+      "  // Methods",
+      "  const ${4:method} = () => {",
+      "    $5",
+      "  }",
+      "  ",
+      "  return {",
+      "    ${2:state},",
+      "    ${4:method}",
+      "  }",
+      "}"
+    ],
+    "description": "Nuxt composable template"
+  },
+
+  // API Route Template
+  "Nuxt API Route": {
+    "prefix": "nuxt-api",
+    "body": [
+      "export default defineEventHandler(async (event) => {",
+      "  const method = getMethod(event)",
+      "  ",
+      "  if (method === 'GET') {",
+      "    // Handle GET request",
+      "    return {",
+      "      message: '${1:Success}',",
+      "      data: $2",
+      "    }",
+      "  }",
+      "  ",
+      "  if (method === 'POST') {",
+      "    const body = await readBody(event)",
+      "    // Handle POST request",
+      "    return {",
+      "      message: '${3:Created}',",
+      "      data: body",
+      "    }",
+      "  }",
+      "  ",
+      "  throw createError({",
+      "    statusCode: 405,",
+      "    statusMessage: 'Method Not Allowed'",
+      "  })",
+      "})"
+    ],
+    "description": "Nuxt API route handler"
+  },
+
+  // i18n Translation Key
+  "i18n Translation": {
+    "prefix": "i18n-t",
+    "body": ["{{ \\$t('${1:key}') }}"],
+    "description": "i18n translation in template"
+  },
+
+  // Vue 3 Ref
+  "Vue Ref": {
+    "prefix": "vref",
+    "body": ["const ${1:name} = ref<${2:type}>(${3:value})"],
+    "description": "Vue 3 ref with TypeScript"
+  },
+
+  // Vue 3 Reactive
+  "Vue Reactive": {
+    "prefix": "vreactive",
+    "body": ["const ${1:name} = reactive<${2:type}>({", "  $3", "})"],
+    "description": "Vue 3 reactive with TypeScript"
+  },
+
+  // Vue 3 Computed
+  "Vue Computed": {
+    "prefix": "vcomputed",
+    "body": ["const ${1:name} = computed(() => {", "  return $2", "})"],
+    "description": "Vue 3 computed property"
+  },
+
+  // Vue 3 Watch
+  "Vue Watch": {
+    "prefix": "vwatch",
+    "body": [
+      "watch(${1:source}, (${2:newVal}, ${3:oldVal}) => {",
+      "  $4",
+      "})"
+    ],
+    "description": "Vue 3 watch function"
+  },
+
+  // Vuetify Form
+  "Vuetify Form": {
+    "prefix": "v-form",
+    "body": [
+      "<v-form",
+      "  ref=\"form\"",
+      "  v-model=\"valid\"",
+      "  @submit.prevent=\"${1:onSubmit}\"",
+      ">",
+      "  <v-text-field",
+      "    v-model=\"${2:field}\"",
+      "    :rules=\"${3:rules}\"",
+      "    label=\"${4:Label}\"",
+      "    required",
+      "  />",
+      "  ",
+      "  <v-btn",
+      "    type=\"submit\"",
+      "    color=\"primary\"",
+      "    :disabled=\"!valid\"",
+      "  >",
+      "    ${5:Submit}",
+      "  </v-btn>",
+      "</v-form>"
+    ],
+    "description": "Vuetify form template"
+  }
+}

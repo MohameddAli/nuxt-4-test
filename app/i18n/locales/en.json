@@ -1,0 +1,226 @@
+{
+  "app": {
+    "title": "PrimeVue Dashboard",
+    "description": "Modern dashboard application built with Nuxt 3 and Vuetify 3"
+  },
+  "loading": {
+    "navigating": "Navigating to {page}...",
+    "loadingPage": "Loading {page}...",
+    "pageNames": {
+      "home": "Home Page",
+      "index": "Home Page",
+      "overview": "Overview",
+      "dashboard": "Dashboard",
+      "analytics": "Analytics",
+      "chat": "Chat",
+      "cards": "Cards",
+      "customers": "Customers",
+      "movies": "Movies",
+      "charts": "Charts",
+      "support": "Support",
+      "settings": "Settings",
+      "profile": "Profile",
+      "users": "Users",
+      "reports": "Reports",
+      "transactions": "Transactions",
+      "wallets": "Wallets",
+      "help": "Help",
+      "loading-test": "Loading Test",
+      "translation-test": "Translation Test",
+      "unauthorized": "Unauthorized"
+    }
+  },
+  "common": {
+    "scrollToTop": "Scroll to top",
+    "search": "Search",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "clear": "Clear",
+    "download": "Download",
+    "monthly": "Monthly",
+    "weekly": "Weekly",
+    "daily": "Daily",
+    "totalBalance": "Total Balance",
+    "showAll": "Show all",
+    "progress": "Progress",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "add": "Add",
+    "remove": "Remove",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "header": {
+    "logoAlt": "Company Logo",
+    "companyName": "PrimeVue",
+    "searchPlaceholder": "Search...",
+    "openSearch": "Open search",
+    "changeLanguage": "Change language",
+    "toggleTheme": "Toggle theme",
+    "profile": "Profile",
+    "logout": "Logout",
+    "notifications": "Notifications",
+    "viewAllNotifications": "View All Notifications"
+  },
+  "dateRange": {
+    "openPicker": "Open date range picker",
+    "selectRange": "Select range"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Type to search...",
+    "inputAria": "Search input",
+    "close": "Close",
+    "empty": "Start typing to see results",
+    "open": "Open",
+    "navigate": "Navigate"
+  },
+  "sidebar": {
+    "navigation": "Navigation",
+    "subtitle": "Main menu",
+    "toggleMode": "Toggle sidebar mode",
+    "collapse": "Collapse",
+    "expand": "Expand"
+  },
+  "navigation": {
+    "home": "Home",
+    "overview": "Overview",
+    "chat": "Chat",
+    "insights": "Insights",
+    "inbox": "Inbox",
+    "cards": "Cards",
+    "customers": "Customers",
+    "movies": "Movies",
+    "transactions": "Transactions",
+    "allTransactions": "All Transactions",
+    "pending": "Pending",
+    "completed": "Completed",
+    "wallets": "Wallets",
+    "personal": "Personal",
+    "corporate": "Corporate",
+    "investment": "Investment",
+    "support": "Support",
+    "settings": "Settings",
+    "help": "Help",
+    "dashboard": "Dashboard",
+    "analytics": "Analytics",
+    "reports": "Reports",
+    "users": "Users",
+    "profile": "Profile"
+  },
+  "table": {
+    "id": "ID",
+    "name": "Name",
+    "coin": "Coin",
+    "date": "Date",
+    "process": "Process",
+    "amount": "Amount"
+  },
+  "pages": {
+    "overview": {
+      "title": "Overview",
+      "subtitle": "Dashboard overview and analytics",
+      "goodMorning": "Good Morning",
+      "cryptoAnalytics": "Crypto Analytics",
+      "myWallet": "My Wallet",
+      "transactions": "Transactions",
+      "personalWallet": "Personal Wallet",
+      "corporateWallet": "Corporate Wallet",
+      "investmentWallet": "Investment Wallet"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "subtitle": "Detailed analytics and reports"
+    },
+    "cards": {
+      "title": "Cards",
+      "subtitle": "Manage your cards and payments"
+    },
+    "customers": {
+      "title": "Customers",
+      "subtitle": "Customer management and support"
+    },
+    "movies": {
+      "title": "Movies",
+      "subtitle": "Movie catalog and entertainment"
+    },
+    "support": {
+      "title": "Support",
+      "subtitle": "Help center and documentation"
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Application settings and preferences"
+    }
+  },
+  "errors": {
+    "404": "Page not found",
+    "500": "Internal server error",
+    "networkError": "Network error occurred",
+    "unknownError": "An unknown error occurred",
+    "title": {
+      "notFound": "404 - Page Not Found",
+      "server": "Server Error",
+      "client": "Request Error",
+      "network": "Network Error",
+      "unauthorized": "Access Denied",
+      "forbidden": "Forbidden Access",
+      "timeout": "Request Timeout",
+      "maintenance": "Under Maintenance",
+      "unexpected": "Unexpected Error"
+    },
+    "message": {
+      "notFound": "The page you're looking for doesn't exist or has been moved.",
+      "server": "We're experiencing technical difficulties on our server. Please try again in a few minutes.",
+      "client": "There was an issue with your request. Please check your input and try again.",
+      "network": "Unable to connect to our servers. Please check your internet connection and try again.",
+      "unauthorized": "Your session has expired. Please log in again to continue.",
+      "forbidden": "You don't have permission to access this resource.",
+      "timeout": "Your request took too long to process. Please try again.",
+      "maintenance": "We're currently performing maintenance. We'll be back shortly.",
+      "unexpected": "Something unexpected happened. Our team has been notified and is working to fix it."
+    },
+    "action": {
+      "retry": "Try Again",
+      "goBack": "Go Back",
+      "goHome": "Go Home",
+      "login": "Log In",
+      "contactSupport": "Contact Support",
+      "refresh": "Refresh Page",
+      "report": "Report Error"
+    },
+    "technicalDetails": "Technical Details",
+    "errorCode": "Error Code",
+    "timestamp": "Time",
+    "userAgent": "Browser",
+    "url": "URL",
+    "method": "Method",
+    "status": "Status",
+    "help": {
+      "title": "Need Help?",
+      "description": "If this error persists, please contact our support team",
+      "supportEmail": "support&#64;company.com",
+      "supportPhone": "+1 (555) 123-4567"
+    },
+    "suggestions": {
+      "title": "What you can try:",
+      "checkUrl": "Double-check the URL for typos",
+      "refresh": "Refresh the page",
+      "clearCache": "Clear your browser cache",
+      "tryLater": "Try again in a few minutes",
+      "contactUs": "Contact our support team"
+    }
+  },
+  "pagination": {
+    "itemsPerPage": "Items per page",
+    "go": "Go",
+    "range": "Showing {from}-{to} of {total}",
+    "rangeEmpty": "No items to display",
+    "inputAriaPage": "Go to page",
+    "inputAriaPageSize": "Select page size"
+  }
+}

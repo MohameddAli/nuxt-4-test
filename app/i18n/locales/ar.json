@@ -1,0 +1,230 @@
+{
+  "app": {
+    "title": "لوحة تحكم برايم فيو",
+    "description": "تطبيق لوحة تحكم حديث مبني بـ Nuxt 3 و Vuetify 3"
+  },
+  "loading": {
+    "navigating": "جاري الانتقال إلى {page}...",
+    "loadingPage": "جاري تحميل {page}...",
+    "pageNames": {
+      "home": "الصفحة الرئيسية",
+      "index": "الصفحة الرئيسية",
+      "overview": "نظرة عامة",
+      "dashboard": "لوحة التحكم",
+      "analytics": "التحليلات",
+      "chat": "المحادثة",
+      "cards": "البطاقات",
+      "customers": "العملاء",
+      "movies": "الأفلام",
+      "charts": "الرسوم البيانية",
+      "support": "الدعم",
+      "settings": "الإعدادات",
+      "profile": "الملف الشخصي",
+      "users": "المستخدمون",
+      "reports": "التقارير",
+      "transactions": "المعاملات",
+      "wallets": "المحافظ",
+      "help": "المساعدة",
+      "loading-test": "اختبار التحميل",
+      "translation-test": "اختبار الترجمة",
+      "unauthorized": "غير مصرح"
+    }
+  },
+  "common": {
+    "scrollToTop": "العودة للأعلى",
+    "search": "بحث",
+    "close": "إغلاق",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "apply": "تطبيق",
+    "clear": "مسح",
+    "download": "تحميل",
+    "monthly": "شهري",
+    "weekly": "أسبوعي",
+    "daily": "يومي",
+    "totalBalance": "إجمالي الرصيد",
+    "showAll": "عرض الكل",
+    "progress": "التقدم",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "add": "إضافة",
+    "remove": "إزالة",
+    "confirm": "تأكيد",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "header": {
+    "logoAlt": "شعار الشركة",
+    "companyName": "برايم فيو",
+    "searchPlaceholder": "بحث...",
+    "openSearch": "فتح البحث",
+    "changeLanguage": "تغيير اللغة",
+    "toggleTheme": "تبديل المظهر",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "notifications": "الإشعارات",
+    "viewAllNotifications": "عرض جميع الإشعارات"
+  },
+  "dateRange": {
+    "openPicker": "فتح محدد نطاق التاريخ",
+    "selectRange": "اختر الفترة"
+  },
+  "search": {
+    "title": "بحث",
+    "placeholder": "اكتب للبحث...",
+    "inputAria": "حقل إدخال البحث",
+    "close": "إغلاق",
+    "empty": "ابدأ بالكتابة لعرض النتائج",
+    "open": "فتح",
+    "navigate": "تنقّل"
+  },
+  "sidebar": {
+    "navigation": "التنقل",
+    "subtitle": "القائمة الرئيسية",
+    "toggleMode": "تبديل وضع الشريط الجانبي",
+    "collapse": "طي",
+    "expand": "توسيع"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "overview": "نظرة عامة",
+    "chat": "المحادثة",
+    "insights": "رؤى",
+    "inbox": "الوارد",
+    "cards": "البطاقات",
+    "customers": "العملاء",
+    "movies": "الأفلام",
+    "transactions": "المعاملات",
+    "allTransactions": "كل المعاملات",
+    "pending": "قيد الانتظار",
+    "completed": "مكتمل",
+    "wallets": "المحافظ",
+    "personal": "شخصي",
+    "corporate": "شركة",
+    "investment": "استثمار",
+    "support": "الدعم",
+    "settings": "الإعدادات",
+    "help": "مساعدة",
+    "dashboard": "لوحة التحكم",
+    "analytics": "التحليلات",
+    "reports": "التقارير",
+    "users": "المستخدمون",
+    "profile": "الملف الشخصي"
+  },
+  "table": {
+    "id": "المعرف",
+    "name": "الاسم",
+    "coin": "العملة",
+    "date": "التاريخ",
+    "process": "العملية",
+    "amount": "المبلغ"
+  },
+  "pages": {
+    "overview": {
+      "title": "نظرة عامة",
+      "subtitle": "نظرة عامة على لوحة التحكم والتحليلات",
+      "goodMorning": "صباح الخير",
+      "cryptoAnalytics": "تحليلات العملات المشفرة",
+      "myWallet": "محفظتي",
+      "transactions": "المعاملات",
+      "personalWallet": "المحفظة الشخصية",
+      "corporateWallet": "محفظة الشركة",
+      "investmentWallet": "محفظة الاستثمار"
+    },
+    "analytics": {
+      "title": "التحليلات",
+      "subtitle": "تحليلات وتقارير مفصلة"
+    },
+    "chat": {
+      "title": "المحادثة",
+      "subtitle": "المراسلة الفورية"
+    },
+    "cards": {
+      "title": "البطاقات",
+      "subtitle": "إدارة البطاقات والمدفوعات"
+    },
+    "customers": {
+      "title": "العملاء",
+      "subtitle": "إدارة العملاء والدعم"
+    },
+    "movies": {
+      "title": "الأفلام",
+      "subtitle": "كتالوج الأفلام والترفيه"
+    },
+    "support": {
+      "title": "الدعم",
+      "subtitle": "مركز المساعدة والوثائق"
+    },
+    "settings": {
+      "title": "الإعدادات",
+      "subtitle": "إعدادات التطبيق والتفضيلات"
+    }
+  },
+  "errors": {
+    "404": "الصفحة غير موجودة",
+    "500": "خطأ في الخادم الداخلي",
+    "networkError": "حدث خطأ في الشبكة",
+    "unknownError": "حدث خطأ غير معروف",
+    "title": {
+      "notFound": "404 - الصفحة غير موجودة",
+      "server": "خطأ في الخادم",
+      "client": "خطأ في الطلب",
+      "network": "خطأ في الشبكة",
+      "unauthorized": "تم رفض الوصول",
+      "forbidden": "وصول محظور",
+      "timeout": "انتهت مهلة الطلب",
+      "maintenance": "قيد الصيانة",
+      "unexpected": "خطأ غير متوقع"
+    },
+    "message": {
+      "notFound": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+      "server": "نواجه صعوبات تقنية في خادمنا. يرجى المحاولة مرة أخرى خلال دقائق قليلة.",
+      "client": "حدثت مشكلة في طلبك. يرجى التحقق من البيانات المدخلة والمحاولة مرة أخرى.",
+      "network": "تعذر الاتصال بخوادمنا. يرجى التحقق من اتصال الإنترنت والمحاولة مرة أخرى.",
+      "unauthorized": "انتهت صلاحية جلستك. يرجى تسجيل الدخول مرة أخرى للمتابعة.",
+      "forbidden": "ليس لديك صلاحية للوصول إلى هذا المورد.",
+      "timeout": "استغرق طلبك وقتًا طويلاً للمعالجة. يرجى المحاولة مرة أخرى.",
+      "maintenance": "نقوم حاليًا بأعمال الصيانة. سنعود قريبًا.",
+      "unexpected": "حدث شيء غير متوقع. تم إشعار فريقنا ونعمل على إصلاحه."
+    },
+    "action": {
+      "retry": "المحاولة مرة أخرى",
+      "goBack": "العودة",
+      "goHome": "الصفحة الرئيسية",
+      "login": "تسجيل الدخول",
+      "contactSupport": "الاتصال بالدعم",
+      "refresh": "تحديث الصفحة",
+      "report": "تقرير الخطأ"
+    },
+    "technicalDetails": "التفاصيل التقنية",
+    "errorCode": "رمز الخطأ",
+    "timestamp": "الوقت",
+    "userAgent": "المتصفح",
+    "url": "الرابط",
+    "method": "الطريقة",
+    "status": "الحالة",
+    "help": {
+      "title": "تحتاج مساعدة؟",
+      "description": "إذا استمر هذا الخطأ، يرجى الاتصال بفريق الدعم",
+      "supportEmail": "support&#64;company.com",
+      "supportPhone": "+966 11 123 4567"
+    },
+    "suggestions": {
+      "title": "ما يمكنك تجربته:",
+      "checkUrl": "تحقق مرتين من الرابط بحثًا عن أخطاء إملائية",
+      "refresh": "قم بتحديث الصفحة",
+      "clearCache": "امسح ذاكرة التخزين المؤقت للمتصفح",
+      "tryLater": "حاول مرة أخرى خلال دقائق قليلة",
+      "contactUs": "تواصل مع فريق الدعم"
+    }
+  },
+  "pagination": {
+    "itemsPerPage": "العناصر في الصفحة",
+    "go": "اذهب",
+    "range": "عرض {from}-{to} من {total}",
+    "rangeEmpty": "لا توجد عناصر للعرض",
+    "inputAriaPage": "اذهب إلى صفحة",
+    "inputAriaPageSize": "اختر حجم الصفحة"
+  }
+}

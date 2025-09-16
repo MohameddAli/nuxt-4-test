@@ -1,0 +1,70 @@
+{
+  "nuxt.isNuxtApp": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "vue.inlayHints.missingProps": true,
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "vue.inlayHints.optionsWrapper": true,
+  "vue.codeActions.enabled": true,
+  "vue.complete.casing.props": "kebab",
+  "vue.complete.casing.tags": "kebab",
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  "vetur.validation.template": false,
+  "vetur.validation.script": false,
+  "vetur.validation.style": false,
+  "files.associations": {
+    "*.vue": "vue",
+    "*.md": "markdown"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggest.insertMode": "replace",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/app",
+    "~": "${workspaceFolder}/app",
+    "~~": "${workspaceFolder}",
+    "@@": "${workspaceFolder}"
+  },
+  "i18n-ally.localesPaths": ["app/i18n/locales"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.defaultNamespace": "common",
+  "i18n-ally.enabledFrameworks": ["vue", "nuxt"],
+  "editor.fontFamily": "'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/coverage": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.nuxt/**": true,
+    "**/.output/**": true
+  }
+}

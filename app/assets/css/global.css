@@ -1,0 +1,642 @@
+/* Global Styles for Prime Dashboard */
+
+/* Import Material Design Icons */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* Root Variables */
+:root {
+  --header-height: 72px;
+  --sidebar-width: 280px;
+  --sidebar-mini-width: 72px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 20px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.4s ease;
+
+  /* متغيرات الثيم الأصفر */
+  --yellow-primary: #ffc107;
+  --yellow-primary-dark: #ffb300;
+  --yellow-primary-light: #ffecb3;
+  --yellow-text-on-primary: #000000;
+  --yellow-hover: #ffecb3;
+  --yellow-focus: #ffd54f;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Vuetify Overrides */
+.v-application {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif !important;
+}
+
+/* Header Enhancements */
+.app-header {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(var(--v-border-color), 0.08) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+.app-header .header-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.app-header .logo-icon {
+  background: linear-gradient(
+    135deg,
+    var(--yellow-primary),
+    var(--yellow-primary-dark)
+  );
+  border-radius: var(--border-radius-md);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+}
+
+.app-header .logo-icon:hover {
+  background: linear-gradient(
+    135deg,
+    var(--yellow-hover),
+    var(--yellow-primary)
+  );
+  transform: scale(1.05);
+}
+
+.app-header .search-field {
+  max-width: 400px;
+}
+
+.app-header .search-field .v-field {
+  background: rgba(var(--v-theme-surface-variant), 0.3) !important;
+  border-radius: 24px !important;
+  box-shadow: none !important;
+}
+
+.app-header .download-btn {
+  border-radius: 20px;
+  text-transform: none;
+  font-weight: 500;
+  border: 1px solid rgba(var(--v-theme-primary), 0.3);
+}
+
+.app-header .user-profile-btn {
+  border-radius: 20px;
+  padding: 8px 12px;
+  background: rgba(var(--v-theme-surface-variant), 0.3);
+}
+
+/* Sidebar Enhancements */
+.app-sidebar {
+  border-right: 1px solid rgba(var(--v-border-color), 0.08) !important;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+.app-sidebar .sidebar-header {
+  border-bottom: 1px solid rgba(var(--v-border-color), 0.08);
+  background: rgba(var(--v-theme-surface-variant), 0.02);
+}
+
+.app-sidebar .logo-icon {
+  background: linear-gradient(
+    135deg,
+    var(--yellow-primary),
+    var(--yellow-primary-dark)
+  );
+  border-radius: var(--border-radius-md);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+}
+
+.app-sidebar .logo-icon:hover {
+  background: linear-gradient(
+    135deg,
+    var(--yellow-hover),
+    var(--yellow-primary)
+  );
+  transform: scale(1.05);
+}
+
+.app-sidebar .nav-item {
+  margin: 2px 0;
+  transition: all var(--transition-fast);
+  border-radius: var(--border-radius-md) !important;
+}
+
+.app-sidebar .nav-item:hover {
+  background: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+  transform: translateX(2px);
+}
+
+.app-sidebar .nav-item-active {
+  background: var(--yellow-primary) !important;
+  color: var(--yellow-text-on-primary) !important;
+  font-weight: 600;
+}
+
+.app-sidebar .nav-item-active .v-icon {
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.app-sidebar .nav-item-active:hover {
+  background: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.app-sidebar .user-card {
+  background: rgba(var(--v-theme-primary), 0.05) !important;
+  border: 1px solid rgba(var(--v-theme-primary), 0.1);
+}
+
+/* Dashboard Page Enhancements */
+.dashboard-page {
+  background: linear-gradient(
+    135deg,
+    rgba(var(--v-theme-background), 1),
+    rgba(var(--v-theme-surface-variant), 0.3)
+  );
+  min-height: 100vh;
+}
+
+/* Card Enhancements */
+.v-card {
+  border-radius: var(--border-radius-lg) !important;
+  box-shadow: var(--shadow-sm) !important;
+  border: 1px solid rgba(var(--v-border-color), 0.06);
+  transition: all var(--transition-normal);
+}
+
+.v-card:hover {
+  box-shadow: var(--shadow-md) !important;
+  transform: translateY(-1px);
+}
+
+/* Button Enhancements */
+.v-btn {
+  border-radius: var(--border-radius-md) !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  transition: all var(--transition-fast) !important;
+}
+
+.v-btn--variant-elevated {
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.v-btn--variant-elevated:hover {
+  box-shadow: var(--shadow-md) !important;
+  transform: translateY(-1px);
+}
+
+.v-btn--variant-outlined {
+  border-width: 1.5px !important;
+}
+
+/* تحسينات خاصة بالثيم الأصفر */
+.v-btn--variant-elevated.v-btn--color-primary {
+  background-color: var(--yellow-primary) !important;
+  color: var(--yellow-text-on-primary) !important;
+  border: none !important;
+}
+
+.v-btn--variant-elevated.v-btn--color-primary:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.v-btn--variant-elevated.v-btn--color-primary:focus {
+  background-color: var(--yellow-focus) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.v-btn--variant-outlined.v-btn--color-primary {
+  border-color: var(--yellow-primary) !important;
+  color: var(--yellow-primary) !important;
+}
+
+.v-btn--variant-outlined.v-btn--color-primary:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.v-btn--variant-text.v-btn--color-primary {
+  color: var(--yellow-primary) !important;
+}
+
+.v-btn--variant-text.v-btn--color-primary:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+/* Chip Enhancements */
+.v-chip {
+  border-radius: var(--border-radius-xl) !important;
+  font-weight: 500 !important;
+}
+
+/* تحسينات الرقائق للثيم الأصفر */
+.v-chip--color-primary {
+  background-color: var(--yellow-primary) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.v-chip--color-primary:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+/* Table Enhancements */
+.v-table {
+  border-radius: var(--border-radius-lg) !important;
+  overflow: hidden;
+}
+
+.v-table .v-table__wrapper {
+  border-radius: var(--border-radius-lg) !important;
+}
+
+.v-table thead th {
+  background: rgba(var(--v-theme-surface-variant), 0.3) !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  color: rgb(var(--v-theme-on-surface-variant)) !important;
+  border-bottom: 1px solid rgba(var(--v-border-color), 0.12) !important;
+}
+
+.v-table tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+.v-table tbody tr:hover {
+  background: rgba(var(--v-theme-surface-variant), 0.08) !important;
+}
+
+/* Progress Bar Enhancements */
+.v-progress-linear {
+  border-radius: var(--border-radius-sm) !important;
+  overflow: hidden;
+}
+
+/* Avatar Enhancements */
+.v-avatar {
+  border: 2px solid rgba(var(--v-theme-surface), 1);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Input Field Enhancements */
+.v-text-field .v-field {
+  border-radius: var(--border-radius-md) !important;
+  transition: all var(--transition-fast);
+}
+
+.v-text-field .v-field:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+/* Menu Enhancements */
+.v-menu .v-overlay__content {
+  border-radius: var(--border-radius-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+  border: 1px solid rgba(var(--v-border-color), 0.08);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+/* List Enhancements */
+.v-list {
+  border-radius: var(--border-radius-md) !important;
+}
+
+.v-list-item {
+  border-radius: var(--border-radius-sm) !important;
+  margin: 2px 0;
+  transition: all var(--transition-fast);
+}
+
+.v-list-item:hover {
+  background: rgba(var(--v-theme-primary), 0.08) !important;
+}
+
+/* تحسينات القوائم للثيم الأصفر */
+.v-list-item--active {
+  background-color: var(--yellow-primary) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.v-list-item--active:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+/* Badge Enhancements */
+.v-badge .v-badge__badge {
+  border-radius: 50% !important;
+  font-weight: 600 !important;
+  font-size: 0.75rem !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--v-theme-on-surface), 0.2);
+  border-radius: 4px;
+  transition: background var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--v-theme-on-surface), 0.3);
+}
+
+/* Dark/Light mode specific adjustments removed */
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.4s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.4s ease-out;
+}
+
+.slide-in-up {
+  animation: slideInUp 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .header-content {
+    padding: 0 16px !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .header-center {
+    max-width: 300px !important;
+    margin: 0 16px !important;
+  }
+
+  .dashboard-page {
+    padding: 16px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    padding: 0 12px !important;
+  }
+
+  .header-center {
+    display: none !important;
+  }
+
+  .dashboard-page {
+    padding: 12px !important;
+  }
+
+  .v-card {
+    margin-bottom: 16px !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .app-header,
+  .app-sidebar,
+  .v-btn,
+  .scroll-top-btn {
+    display: none !important;
+  }
+
+  .main-content {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .v-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .v-card,
+  .v-btn,
+  .v-text-field .v-field {
+    border: 2px solid rgb(var(--v-theme-on-surface)) !important;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.v-btn:focus-visible,
+.v-text-field:focus-within,
+.v-list-item:focus-visible {
+  outline: 2px solid var(--yellow-primary);
+  outline-offset: 2px;
+}
+
+/* تأثيرات هوفر إضافية للثيم الأصفر */
+.v-btn--color-primary:focus-visible {
+  outline: 2px solid var(--yellow-focus);
+  outline-offset: 2px;
+}
+
+/* تأثيرات انتقال سلسة للعناصر التفاعلية */
+.v-btn--color-primary,
+.v-chip--color-primary,
+.v-list-item--active {
+  transition: all var(--transition-normal) !important;
+}
+
+/* تأثيرات خاصة للعناصر المخصصة */
+.app-header .download-btn:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+  border-color: var(--yellow-primary) !important;
+}
+
+.app-sidebar .nav-item:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.app-sidebar .nav-item-active {
+  background-color: var(--yellow-primary) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.app-sidebar .nav-item-active:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+/* Loading States */
+.loading-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--v-theme-surface-variant), 0.3) 25%,
+    rgba(var(--v-theme-surface-variant), 0.5) 50%,
+    rgba(var(--v-theme-surface-variant), 0.3) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Utility Classes */
+.glass-effect {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: rgba(var(--v-theme-surface), 0.8);
+  border: 1px solid rgba(var(--v-border-color), 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--yellow-primary),
+    var(--yellow-primary-dark)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hover-lift {
+  transition: transform var(--transition-normal);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.text-shadow {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* فئات مساعدة إضافية للثيم الأصفر */
+.yellow-accent {
+  color: var(--yellow-primary) !important;
+}
+
+.yellow-bg {
+  background-color: var(--yellow-primary) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+.yellow-hover:hover {
+  background-color: var(--yellow-hover) !important;
+  color: var(--yellow-text-on-primary) !important;
+}
+
+/* تحسينات للعناصر المخصصة */
+.v-progress-linear--color-primary .v-progress-linear__determinate {
+  background-color: var(--yellow-primary) !important;
+}
+
+.v-progress-circular--color-primary .v-progress-circular__overlay {
+  stroke: var(--yellow-primary) !important;
+}

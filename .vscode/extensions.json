@@ -1,0 +1,62 @@
+{
+  "recommendations": [
+    // Vue & Nuxt Development
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "nuxt.mdc",
+
+    // TypeScript Support
+    "ms-vscode.vscode-typescript-next",
+
+    // Linting & Formatting
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+
+    // UI/UX Development with Vuetify
+    "vuetifyjs.vuetify-vscode",
+
+    // i18n Support
+    "lokalise.i18n-ally",
+
+    // Git & Version Control
+    "eamodio.gitlens",
+
+    // Path Intellisense
+    "christian-kohler.path-intellisense",
+
+    // Auto Rename Tag
+    "formulahendry.auto-rename-tag",
+
+    // Bracket Pair Colorizer
+    "coenraads.bracket-pair-colorizer-2",
+
+    // File Icons
+    "vscode-icons-team.vscode-icons",
+
+    // Color Theme (Material Design)
+    "equinusocio.vsc-material-theme",
+    "equinusocio.vsc-material-theme-icons",
+
+    // CSS/SCSS Support
+    "bradlc.vscode-tailwindcss",
+    "mrmlnc.vscode-scss",
+
+    // Markdown Support
+    "yzhang.markdown-all-in-one",
+
+    // REST Client for API Testing
+    "humao.rest-client",
+
+    // Database Tools (if needed)
+    "ms-mssql.mssql",
+
+    // Arabic RTL Support
+    "ahmadalli.vscode-arabic-support",
+
+    // Package Manager Support
+    "christian-kohler.npm-intellisense",
+
+    // Terminal Enhancement
+    "ms-vscode.powershell"
+  ]
+}
